@@ -1,0 +1,12 @@
+{
+    "ID": "9B1E4E14-15DB-48E5-9156-3C1A9AB3FF31",
+    "ActionKeyword": "meet",
+    "Name": "Google Meet Creator",
+    "Description": "Create Google Meet meetings directly from Flow Launcher",
+    "Author": "Your Name",
+    "Version": "1.0.0",
+    "Language": "python",
+    "Website": "https://github.com/yourusername/FlowLauncher-GoogleMeetCreator",
+    "IcoPath": "Images/app.png",
+    "ExecuteFileName": "main.py"
+} 
