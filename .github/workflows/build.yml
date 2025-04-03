@@ -29,10 +29,18 @@ jobs:
         pip install pyinstaller
         pyinstaller --onefile main.py
         
+    - name: Get version
+      id: get_version
+      run: |
+        $version = (Get-Content plugin.json | ConvertFrom-Json).Version
+        echo "version=$version" >> $env:GITHUB_OUTPUT
+        
     - name: Create release
       if: github.event_name == 'push' && github.ref == 'refs/heads/master'
       uses: softprops/action-gh-release@v1
       with:
+        tag_name: v${{ steps.get_version.outputs.version }}
+        name: Release v${{ steps.get_version.outputs.version }}
         files: dist/main.exe
         generate_release_notes: true
       env:
