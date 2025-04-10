@@ -6,7 +6,7 @@
     "Author": "renzo",
     "Version": "1.0.0",
     "Language": "python",
-    "Website": "https://github.com/renzo/Flow.Launcher.Plugin.GoogleMeetCreator",
-    "IcoPath": "Images/app.png",
+    "Website": "https://github.com/renzocastillo/Flow.Launcher.Plugin.GoogleMeetCreator",
+    "IcoPath": "Images\\app.png",
     "ExecuteFileName": "main.py"
 } 
